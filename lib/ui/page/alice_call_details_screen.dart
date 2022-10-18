@@ -8,7 +8,7 @@ import 'package:alice/ui/widget/alice_call_request_widget.dart';
 import 'package:alice/ui/widget/alice_call_response_widget.dart';
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:flutter/material.dart';
-import 'package:share/share.dart';
+import 'package:share_plus/share_plus.dart';
 
 class AliceCallDetailsScreen extends StatefulWidget {
   final AliceHttpCall call;
@@ -20,8 +20,7 @@ class AliceCallDetailsScreen extends StatefulWidget {
   _AliceCallDetailsScreenState createState() => _AliceCallDetailsScreenState();
 }
 
-class _AliceCallDetailsScreenState extends State<AliceCallDetailsScreen>
-    with SingleTickerProviderStateMixin {
+class _AliceCallDetailsScreenState extends State<AliceCallDetailsScreen> with SingleTickerProviderStateMixin {
   AliceHttpCall get call => widget.call;
 
   @override
